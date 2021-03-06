@@ -1,0 +1,20 @@
+
+.btn-info {
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #C3F25E;
+    transition: font-size .3s, text-shadow .3s;
+}
+
+
+.btn-info:hover {
+    color: #ADFA84;
+    font-size: 2rem;
+    text-shadow: 3px 4px 0px rgba(242, 82, 82, 1);
+}

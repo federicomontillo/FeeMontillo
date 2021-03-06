@@ -1,0 +1,234 @@
+
+.web {
+    background-color: rgba(242, 82, 82, .5);
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 200ms;
+    margin-bottom: 1rem;
+}
+
+.web.show {
+    height: 90vh;
+    padding-top: 1rem;
+}
+
+.web.show .proyectos {
+    display: block;
+} 
+
+
+.web-contenedor {
+    padding: 0.6rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.web .proyectos {
+    display: none;  
+}
+
+.web-contenedor i {
+    font-size: 2rem;
+}
+
+.web-listado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.web-listado ul {
+    padding: 0rem;
+}
+
+.web-listado ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.web-listado img {
+    width: 18rem;
+}
+
+.proyectos {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.lista-proyectos {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+
+.pagina {
+    width: 33.3%;
+    padding: 1rem;
+    
+}
+
+.pagina img {
+    width: auto;
+    width: 14rem;
+}
+
+.pagina a {
+    color: #C3F25E;
+}
+
+.app {
+    background-color: rgba(195, 242, 94, .5);
+}
+
+.app-listado {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-listado {
+    width: 60%;
+}
+
+.app-listado img {
+    width: 8rem;
+}
+
+.app-contenedor {
+    padding: 0.6rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.web .paginas-flecha {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+    cursor: pointer;
+    width: 20px;
+    margin: 0 auto;
+    filter: grayscale(100%) opacity(0.7);
+    transform: rotate(+90deg);
+    transition: var(--text-primary);
+    transition: transform 0.5s;
+}
+
+.web.show {
+    height: 100vh;
+}
+
+.web.show .paginas-flecha  {
+    filter: grayscale(0%) opacity(1);
+    transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contanedor-portafolio {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .web {
+        height: auto;
+    }
+
+    .web.show {
+        height: auto;
+    }
+
+    .web .proyectos {
+        display: block;  
+    }
+    
+    
+    .web-contenedor {
+        padding: 0.6rem;
+        text-align: justify;
+    }
+
+    .web-contenedor p {
+        text-align: center;
+    }
+
+    .web-contenedor i {
+        display: none;
+    }
+
+    .web-listado img {
+        width: 10rem;
+    }
+
+    .lista-proyectos {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .pagina {
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .app {
+        height: auto;
+        padding-bottom: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .app-contenedor {
+        padding: 0.6rem;
+        text-align: justify;
+        font-family: 'Roboto Mono', monospace; 
+    }
+    .app-contenedor p {
+        text-align: center;
+    }
+
+    .app-listado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace; 
+        padding-bottom: 3rem;
+    }
+    
+    .app-listado ul {
+        padding: 0rem;
+    }
+    
+    .app-listado ul li {
+        list-style: none;
+        text-align: center;
+        padding: 0.2rem;
+    }
+
+    .app-listado img {
+        width: 10rem;
+    }
+
+    .app-listado {
+        width: 90%;
+    }
+
+}

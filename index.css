@@ -1,0 +1,525 @@
+:root {
+    --text-primary: #C3F25E;
+    --text-secondary: #F25252;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: black;
+}
+
+nav {
+    animation-duration: .5s;
+}
+
+main {
+    animation-duration: 1s;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: blanchedalmond;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+    color: blanchedalmond;
+}
+
+/* -------------------- NavBar ----------------------*/
+
+.navbar {
+    position: fixed;
+    background-color: #242424;
+    transition: 200ms ease;
+}
+
+.navbar-logo {
+    text-align: center;
+}
+
+.navbar-logo img {
+    width: 4.5rem;
+    max-width: 4.5rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.nav-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navbar .nav-flecha {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+    width: 90%;
+    margin: 0 auto;
+    filter: grayscale(100%) opacity(0.7);
+    transform: rotate(0);
+    transition: var(--text-primary);
+    transition: transform 0.5s;
+}
+
+.navbar:hover .nav-flecha  {
+    filter: grayscale(0%) opacity(1);
+    transform: rotate(+90deg);
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+    font-family: 'Roboto Mono', monospace;
+    height: 5rem;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--text-secondary);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: #4C4B4B;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link i {
+    font-size: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.nav-social {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    
+}
+
+.nav-link-social {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link-social i {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
+.nav-link-social i:hover {
+    color: #8C3B42;
+    font-size: 1.5rem;
+}
+
+/* Web */
+
+@media only screen and (min-width: 600px) {
+
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline-block;
+        transition: opacity 0.5s;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        animation-duration: 0s;
+    }
+    
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .navbar:hover {
+        width: 100vw;
+    }
+
+    .navbar-logo img {
+        position: fixed;
+        top: 0;
+        left: 1rem;
+    }
+
+    .navbar .nav-flecha {
+        display: none;
+    }
+
+    .nav-container {
+        height: 5rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+    .nav-container ul.navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-container ul.navbar-nav span.link-text {
+        display: none;
+    }
+
+    .nav-link-social {
+        margin: 0.5rem 0.5rem;
+        
+    }
+
+    .nav-container ul.nav-social {
+        width: auto;
+        height: auto;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        right: 1rem;
+    }
+
+    main {
+        margin: 0;
+    }
+}
+
+/* -------------------- Main ----------------------*/
+
+.main-cabezera {
+    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+    margin-top: 8rem;
+    width: 80%;
+}
+
+.main-pagos {
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    margin-right: 0;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.main-cabezera h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    color: #A8A0A0;
+    text-shadow: 3px 4px 0px rgba(195, 242, 94, 1);
+    margin-bottom: 1rem;
+}
+
+.main-cabezera h1 span {
+    text-shadow: 3px 4px 0px rgba(242, 82, 82, 1);
+}
+
+
+.main-cabezera h2 {
+    font-family: 'Roboto Mono', monospace;  
+}
+
+.main-cabezera h3 {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.main-cabezera h4 {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.main-cabezera p {
+    text-align: left;
+    text-justify: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-tecnologias {
+    background-color: rgba(242, 82, 82, .5);
+    padding: 2rem 1rem;
+    height: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.nav-pagos {
+    background-color: rgba(195, 242, 94, .5);
+    padding: 2rem 1rem;
+    height: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.nav-pagos h3 {
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1.5rem;
+}
+
+.nav-pagos .servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-pagos .servicio {
+    font-family: 'Roboto Mono', monospace; 
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-pagos .servicio i {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.nav-lista p {
+    text-align: justify;
+}
+
+.nav-lista ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.nav-logos {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-cabezera {
+        margin-bottom: 0;
+        margin-left: 2rem;
+        margin-right: 0;
+        margin-top: 6rem;
+        width: 80%;
+    }
+    
+    .main-cabezera h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-cabezera h2 {
+        font-size: 1.2rem;
+    }
+
+    .nav-logos {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .nav-lista p {
+        text-align: left;
+    }
+
+    .nav-pagos .servicios {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
+    .nav-pagos .servicio {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .nav-pagos .servicio i {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-pagos {
+        margin-bottom: 6rem;
+        margin-top: 2rem;
+    }
+}
+
+/* -------------------- Contacto ----------------------*/
+
+.contacto-formulario {
+    background-color: rgba(242, 82, 82, .5);
+    margin-top: 4rem;
+    padding: 0.6rem;
+    height: auto;
+    max-height: 400px;
+    width: 70%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.contacto-formulario h4 {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1.5rem;
+}
+
+.contacto-formulario form p {
+    color: #fff;
+    display: grid;
+    width: 80%;
+    margin:  0 auto;
+    padding: 0.5rem;
+}
+
+.contacto-formulario form textarea::placeholder {
+    color: #fff;
+}
+
+.contacto-formulario form input::placeholder {
+    color: #fff;
+}
+
+.contacto-formulario form p input {
+    color: #fff;
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1rem;
+    padding: .2rem;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #C3F25E;
+}
+
+
+.contacto-formulario form p textarea {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace; 
+    padding: .2rem;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #C3F25E;
+}
+
+.contacto-formulario form input.btn-info {
+    border-bottom: none;
+    color: #C3F25E;
+}
+
+.contacto-contacto {
+    background-color: rgba(195, 242, 94, .5);
+    margin-top: 1rem;
+    padding: 0.6rem;
+    height: auto;
+    width: 70%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.contacto-contacto h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.info-contactos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-contactos ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    .contacto-formulario {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .contacto-contacto {
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+        padding: 0.6rem;
+        height: auto;
+        width: 80%;
+    }
+}
+
+/* -------------------- Footer ----------------------*/
+
+.copy-footer {
+    text-align: right;
+    padding: .05rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: blanchedalmond;
+}
+
+.copy-footer p {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+
